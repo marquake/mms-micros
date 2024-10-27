@@ -1,0 +1,13 @@
+server:
+    port: 8888
+
+spring:
+    application:
+        name: config-server-no-eureka
+    profiles:
+        active: native
+    cloud:
+        config:
+            server:
+                native:
+                    search-locations: C:\marcos\mms-micros\micros-config-server-local-app-no-eureka-native\properties-local\

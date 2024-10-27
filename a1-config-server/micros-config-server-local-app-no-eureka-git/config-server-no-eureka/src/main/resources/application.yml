@@ -1,0 +1,15 @@
+server:
+    port: 8888
+
+spring:
+    application:
+        name: config-server-no-eureka
+    profiles:
+        active: native
+    cloud:
+        config:
+            server:
+                git:
+                    uri: C:\marcos\mms-micros\micros-config-server-local-app-no-eureka-git\properties-local\
+                    clone-on-start: true
+                    basedir: C:\marcos\mms-micros\micros-config-server-local-app-no-eureka-git\clone
