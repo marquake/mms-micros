@@ -1,0 +1,27 @@
+server:
+  port: 8123
+
+spring:
+  application:
+    name: gateway
+
+  cloud:
+    config:
+      discovery:
+        enabled: true
+    gateway:
+      routes:
+        - id: user
+          uri: lb://USER
+          predicates:
+            - Path=/user/**
+        - id: order
+          uri: lb://ORDER
+          predicates:
+            - Path=/order/**
+
+logging:
+  lever:
+    com.mms: DEBUG
+    org.springframework.web: DEBUG
+    com.netflix: DEBUG
