@@ -1,0 +1,15 @@
+server:
+    port: 8888
+
+spring:
+    application:
+        name: config-server
+    profiles:
+        active: native
+    cloud:
+        config:
+            discovery:
+                enabled: true
+            server:
+                native:
+                    search-locations: C:\marcos\micros\a4-eureka-config-services-gateway\properties\

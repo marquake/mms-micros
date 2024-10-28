@@ -1,0 +1,11 @@
+server:
+    port: 8085
+
+spring:
+  application:
+    name: user
+
+  cloud:
+    config:
+      discovery:
+        enabled: true
