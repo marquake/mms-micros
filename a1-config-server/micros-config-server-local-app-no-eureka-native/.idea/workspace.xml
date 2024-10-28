@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="46188db1-28db-4138-bb46-e20157b82f8d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/properties-local/microservice-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/properties-local/microservice-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/properties-local/microservice-pre.properties" beforeDir="false" afterPath="$PROJECT_DIR$/properties-local/microservice-pre.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/properties-local/microservice-pro.properties" beforeDir="false" afterPath="$PROJECT_DIR$/properties-local/microservice-pro.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/properties-local/test.file" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,21 +15,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/properties-local" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2o2432QG2wFN66m9sf5Am7LxQWw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
