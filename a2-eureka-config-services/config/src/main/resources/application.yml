@@ -1,0 +1,15 @@
+server:
+    port: 8888
+
+spring:
+    application:
+        name: config-server-no-eureka
+    profiles:
+        active: native
+    cloud:
+        config:
+            discovery:
+                enabled: true
+            server:
+                native:
+                    search-locations: C:\marcos\micros\a2\properties\
