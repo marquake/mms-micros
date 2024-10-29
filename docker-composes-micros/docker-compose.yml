@@ -1,0 +1,43 @@
+#version: '3.8'
+#docker-compose up -d
+services:
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    #http://localhost:9090/
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana  # Incluimos el volumen aquí
+    #http://localhost:3000/dashboards
+    #Usuario: admin
+    #Contraseña: admin
+
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "16686:16686" # interfaz Jaeger
+      - "14268:14268" # API de recepción de trazas
+    #http://localhost:16686/
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.10.1
+    ports:
+      - "5601:5601"
+    #http://localhost:5601/
+
+volumes:
+  grafana-data:

@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s  # Intervalo de tiempo para la recolección de métricas
+
+scrape_configs:
+  - job_name: 'prometheus'  # Nombre del trabajo
+    static_configs:
+      - targets: ['localhost:9090']  # Donde Prometheus recogerá las métricas
